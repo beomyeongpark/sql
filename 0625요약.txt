@@ -1,0 +1,40 @@
+git 사용법
+init > add > commit > 원격저장소 생성 > 원격저장소 생성후 나오는 코드들
+
+파일 여러개 올리기 > * 활용 
+------------------------------------------------------
+SELECT 구문은 테이블의 데이터에 영향을 주지않음.
+
+expression : 테이블 데이터에 영향없는 새로운 컬럼  ex) sal+ 5 (sal은 컬럼)
+
+alias : 컬럼이나 expression에 새로운 이름을 부여 ex) 컬럼 , expression [as] 별칭 
+
+DESC : 컬럼구성 정보 확인
+
+null : 할당되지 않은값, 피연산자 사용시 항상 null ex) null + 500 = null
+
+literal : 값자체
+
+literal 표기법 : 값을 표현하는 방법 ex) test 라는 문자열
+java > "test"
+sql > 'test'
+
+결합 : || 또는 CONCAT(문자열1,문자열2)
+=> CONCAT는 2개의 문자열만 가능, CONCAT 쓰기 귀찮으니 ||사용
+
+sql 에서 date 리터럴 표시법 : 'rr/mm/dd' , 서버마다 표기법 다름
+편하게 설정에서 yyyy/mm/dd로 바꿔주는게 편함
+date 타입을 문자열로 : TO_DATE('날짜문자열','형식') ex ) TO_DATE('2020/06/25','yyyy/mm/dd')
+> 날짜를 조건에 넣고싶을때 사용 
+
+WHERE : 테이블에서 조회할 행의 조건을 기술 , 참인경우만 조회
+	1=1 < 항상참 (sql injection)
+
+BETWEEN A AND B : A보다 크거나 같고 B보다 작거나 같음 = 컬럼 >= A AND <=B
+
+IN : 비교값이 나열된 값에 포함될 떄 참으로 인식 비교값 IN(값1,값2,값3...) ex) 10 IN (10,20)
+
+
+
+
+
