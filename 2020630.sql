@@ -71,6 +71,7 @@ FROM TABLE(dbms_xplan.display);
 
 
 --
+좌변을 가공하니 문자열로 처리
 EXPLAIN PLAN FOR
 SELECT * 
 FROM emp
