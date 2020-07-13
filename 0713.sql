@@ -1,4 +1,4 @@
-제약조건 생성 방법
+제약조건 생성 방법.
 DROP TABLE dept_test
 CREATE TABLE dept_test(
     DEPTNO    NUMBER(2),
